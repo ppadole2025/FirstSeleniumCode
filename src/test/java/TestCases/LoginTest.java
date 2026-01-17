@@ -44,8 +44,7 @@ public class LoginTest {
         driver.findElement(By.cssSelector("button[type='submit']")).click();
 
         String actualText = driver.findElement(By.id("flash")).getText();
-        Assert.assertTrue(actualText.contains("You logged into a secure area34" +
-                ""));
+        Assert.assertTrue(actualText.contains("You logged into a secure area"));
     }
 
     @AfterMethod
